@@ -5,7 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run react\"",
+    "react": "cd front && npm start",
+    "server": "nodemon server.js"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.15"
   },
   "repository": {
     "type": "git",
@@ -16,11 +24,5 @@
   "bugs": {
     "url": "https://github.com/Limstar12/-_-_-_-/issues"
   },
-  "homepage": "https://github.com/Limstar12/-_-_-_-#readme",
-  "dependencies": {
-    "concurrently": "^7.0.0",
-    "express": "^4.17.3",
-    "mysql": "^2.18.1",
-    "nodemon": "^2.0.15"
-  }
+  "homepage": "https://github.com/Limstar12/-_-_-_-#readme"
 }
