@@ -3,7 +3,7 @@ import Interview from './component/Interview'
 function App() {
   return (
     <div className="App">
-      <Interview></Interview>
+      <Interview botable="aws"></Interview>
     </div>
   );
 }

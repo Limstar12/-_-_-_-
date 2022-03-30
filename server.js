@@ -6,7 +6,7 @@ app.get('/', (req,res,next) => {
     res.send('정상출력')
 })
 
-app.listen(5000,() => {
+app.listen(8080,() => {
     console.log('콘솔도 정상 출력')
 })
 
