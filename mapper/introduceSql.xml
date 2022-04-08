@@ -5,6 +5,56 @@
     <select id="interview">
         select
             *
-        FROM reactinterview.interview
+        FROM innodb.interveiw;
     </select>
+
+    <select id="portfolio">
+        select
+            no
+            , category
+            , subjet
+            , content
+            , imgSrc
+            , imgWidth
+            , imgHeight
+        FROM innodb.portfolio
+    </select>
+    <insert id="interviewInsert">
+    insert into
+        innodb.suppose(
+            companyNM,
+            int_DATA,
+            position,
+            ability,
+            hp
+            )
+            value(
+                '안좋은회사'
+                , '7월 7일 7시'
+                , '마케팅'
+                , '1.2'
+                , '01011111111'
+            );
+    </insert>
+        <insert id="interviewInsertReview">
+    insert into
+        react_suppose.suppose(
+            subject
+            , content
+            <if test=" isimgSrc != '' && isimgSrc != null "> 
+            , imgSrc
+            , imgidentity
+            </if>
+            , data 
+            )
+            value(
+                '제목자리'
+                , '내용자리'
+                <if> 
+                , #{isimgSrc}
+                , #{isimgidentity}
+                </if>
+                , '개발코드'
+            );
+    </insert>
 </mapper>
