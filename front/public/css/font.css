@@ -3,7 +3,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 
@@ -47,10 +47,14 @@
 
 body{
     font-family: 'NanumSquareL';
-    font-family: 'MaruBuri';
+    font-family: 'Do Hyeon', sans-serif;
 }
 
 nav{
     font-family: 'Do Hyeon', sans-serif;
     font-family: 'NanumSquareB';
+}
+
+.port{
+  font-family: 'Gothic A1', sans-serif;
 }

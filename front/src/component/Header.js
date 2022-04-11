@@ -43,9 +43,6 @@ class Header extends Component {
                 <NavLink href="/components/">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">Portpolio</NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink href="/components/">interview</NavLink>
               </NavItem>
               <NavItem>

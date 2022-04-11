@@ -1,3 +1,8 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
 a.navbar-brand img {
   width: 150px;
 }
@@ -12,4 +17,32 @@ a.navbar-brand img {
 
 .container-fluid {
   margin: 0 50px;
+}
+
+#main1.on {
+  background: url("../img/portfolio/portfolio.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 800px;
+}
+
+.d1ul {
+  left: 15rem;
+  top: 7rem;
+}
+
+.d2ul {
+  padding-left: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.d1li {
+  margin-right: 5rem;
+  cursor: pointer;
+}
+
+.d1li.on .d2ul {
+  height: 100%;
 }
