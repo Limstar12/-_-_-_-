@@ -47,7 +47,7 @@
 
 body{
     font-family: 'NanumSquareL';
-    font-family: 'Do Hyeon', sans-serif;
+    /* font-family: 'Do Hyeon', sans-serif; */
 }
 
 nav{
@@ -55,6 +55,6 @@ nav{
     font-family: 'NanumSquareB';
 }
 
-.port{
+h3{
   font-family: 'Gothic A1', sans-serif;
 }

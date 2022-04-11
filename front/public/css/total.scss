@@ -1,7 +1,8 @@
 *{
-    list-style: none;
-    text-decoration: none;
+    list-style: none ;
+    text-decoration: none ;        
 }
+ul{margin-left: 0;}
 
 
 //////// 내비게이션 ////////
@@ -22,33 +23,32 @@ a.navbar-brand img{
 }
 
 
+
 //////// portfolio ////////
-
-#main1.on{
-    background : url('../img/portfolio/portfolio.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    height: 800px;
-}
-
 .d1ul{
-    left: 15rem;
-    top: 7rem;
-}
-
-
-.d2ul{
-    padding-left: 0;
+    position: relative;
+    z-index: 1000;
+    bottom: 20%;
+  }
+  
+  .d2ul{
+    padding-left: 0; 
     height: 0;
-    overflow: hidden;
+    overflow: hidden; 
+  }
+  
+  .d1li.on .d2ul{
+    height: 300px;
+  }
+
+  
+
+//////// footer ////////
+
+.fb{
+    margin: 0 auto !important;
 }
 
-.d1li{
-    margin-right: 5rem;
-    cursor: pointer;
-}
 
-.d1li.on .d2ul{
-    height: 100%;
-}
+
+  

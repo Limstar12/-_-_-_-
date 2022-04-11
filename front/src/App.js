@@ -5,7 +5,6 @@ import Portfolio from './component/Portfolio'
 // import Interview_form from './component/Interviewform'
 import Footer from './component/Footer'
 
-
 function App() {
   return (
     <div className="App">
