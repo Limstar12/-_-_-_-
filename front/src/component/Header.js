@@ -28,24 +28,24 @@ class Header extends Component {
   }
   render() {
     return (
-      <div>
-        <Navbar color="white" light expand="md">
+      <div id="hd">
+        <Navbar className='container' color="white" light expand="md">
           <NavbarBrand href="/">
-            <img src="/svg/logo.svg"></img>
+            <h1 className="logo"><img src="/svg/logo.svg"></img></h1>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto justify-content-end w-100" navbar>
-              <NavItem>
+              <NavItem className='px-3'>
                 <NavLink href="/components/">About Me</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem  className='px-3'>
                 <NavLink href="/components/">Skills</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem  className='px-3'>
                 <NavLink href="/components/">interview</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem  className='px-3'>
                 <NavLink href="/components/">면접제안</NavLink>
               </NavItem>
             </Nav>

@@ -45,16 +45,30 @@
          url(./fonts/MaruBuri-Regular/MaruBuri-Regular.otf) format("embedded-opentype");
   }
 
+
 body{
     font-family: 'NanumSquareL';
     /* font-family: 'Do Hyeon', sans-serif; */
 }
 
-nav{
+.nav-item{
     font-family: 'Do Hyeon', sans-serif;
     font-family: 'NanumSquareB';
+    font-size: 25px;
 }
 
 h3{
   font-family: 'Gothic A1', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.d2li{
+  font-family: 'NanumSquare';
+}
+
+@media (max-width: 992px){
+  h3{
+  font-size: 15px;
+  }
 }
