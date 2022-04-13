@@ -30,8 +30,8 @@ class Header extends Component {
     return (
       <div id="hd">
         <Navbar className='container' color="white" light expand="md">
-          <NavbarBrand href="/">
-            <h1 className="logo"><img src="/svg/logo.svg"></img></h1>
+          <NavbarBrand tag={'div'}>
+            <h1 className="logo"><a href='/index.html'><img src="/svg/logo.svg"></img></a></h1>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

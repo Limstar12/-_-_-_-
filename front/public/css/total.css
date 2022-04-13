@@ -5,14 +5,14 @@
   padding: 0;
 }
 
-a.navbar-brand img {
-  width: 150px;
+h1.logo {
+  width: 130px;
 }
 
 .d1ul {
   z-index: 1000;
   bottom: 20%;
-  top: 15%;
+  top: 10rem;
 }
 
 .d2ul {
@@ -74,5 +74,36 @@ li.rounded-circle:hover {
 @media (max-width: 1280px) {
   .portimg {
     max-width: 100%;
+  }
+}
+
+.aboutLim h1 {
+  text-align: center;
+  line-height: 8rem;
+}
+
+.aboutLim h3 {
+  text-align: center;
+}
+
+.about .info {
+  line-height: 35px;
+}
+
+.aboutimg {
+  background: url("/img/about/aboutMe.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .aboutimg {
+    background: url("../img/about/aboutMe_mobile.jpg");
+    background-size: 100%;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    padding: 10rem;
   }
 }

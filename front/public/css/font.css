@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
 
 /* Hangeul Maruburi Font */
@@ -57,18 +57,29 @@ body{
     font-size: 25px;
 }
 
-h3{
+p{
+  font-family: 'Noto Serif KR', serif;
+}
+
+h1{
   font-family: 'Gothic A1', sans-serif;
   font-size: 30px;
   font-weight: 700;
+}
+
+h3{
+  font-family: 'Gothic A1', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .d2li{
   font-family: 'NanumSquare';
 }
 
+
 @media (max-width: 992px){
-  h3{
+  h1{
   font-size: 15px;
   }
 }
