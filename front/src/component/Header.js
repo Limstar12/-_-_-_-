@@ -11,8 +11,13 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import $ from "jquery";
+  
 
 class Header extends Component {
+
+  
+  
   constructor(props) {
     super(props);
 
@@ -26,27 +31,74 @@ class Header extends Component {
       isOpen: !this.state.isOpen
     });
   }
-  render() {
+  render(){
+
+
+    $(function(){
+      // Hide Header on on scroll down
+      var didScroll;       
+      var lastScrollTop = 0;
+      var delta = 5; // 동작의 구현이 시작되는 위치
+      var barHeight = $('#hd').outerHeight(); // 영향을 받을 요소 선택
+
+      //스크롤 시에 사용자가 스크롤했다는 것을 알림
+      $(window).scroll(function(event){                
+          didScroll = true;
+      });
+      
+      // hasScrolled()를 실행하고 didScroll 상태를 재설정
+      setInterval(function() { 
+          if (didScroll) {
+              hasScrolled();
+              didScroll = false;
+          }    
+      }, 250);
+      
+      function hasScrolled() { // 동작 구현
+          var st = $(this).scrollTop();
+          
+          // Make sure they scroll more than delta
+
+          if(Math.abs(lastScrollTop - st) <= delta)
+            
+            return;
+
+
+          // If they scrolled down and are past the navbar, add class .nav-up.
+          // This is necessary so you never see what is "behind" the navbar.
+
+          if (st > lastScrollTop && st > barHeight){
+              // Scroll Down
+            $('#hd').addClass('up');              
+          } else {
+            $('#hd').removeClass('up');       
+              // Scroll Up
+              // if(st + $(window).height() < $(document).height()) {
+              //     $('#hd').removeClass('nav-up').addClass('nav-down');
+              //  }
+          }
+          lastScrollTop = st;
+
+    }
+  })
     return (
-      <div id="hd">
-        <Navbar className='container' color="white" light expand="md">
-          <NavbarBrand tag={'div'}>
-            <h1 className="logo"><a href='/index.html'><img src="/svg/logo.svg"></img></a></h1>
+
+      <div id='hd'>
+        <Navbar className='container fixed-top wrap' light expand="md">
+          <NavbarBrand className='py-0 d-block' tag={'div'}>
+            <h1 className="logo"><a className='d-block' href='/index.html'><img src="/svg/logo.svg" className='d-block'></img></a></h1>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto justify-content-end w-100" navbar>
               <NavItem className='px-3'>
-                <NavLink href="/components/">About Me</NavLink>
+                <NavLink className='text-dark' href="/components/">내 소개</NavLink>
               </NavItem>
               <NavItem  className='px-3'>
-                <NavLink href="/components/">Skills</NavLink>
+                <NavLink className='text-dark' href="/components/">인터뷰</NavLink>
               </NavItem>
               <NavItem  className='px-3'>
-                <NavLink href="/components/">interview</NavLink>
-              </NavItem>
-              <NavItem  className='px-3'>
-                <NavLink href="/components/">면접제안</NavLink>
+                <NavLink className='text-dark' href="/components/">면접제안</NavLink>
               </NavItem>
             </Nav>
           </Collapse>

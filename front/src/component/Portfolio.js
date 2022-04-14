@@ -28,11 +28,11 @@ export default () => {
             modules={[EffectFade, Pagination]}
             className="mySwiper"
         >                
-            <SwiperSlide className='portSlide justify-content-center d-flex '>
+            <SwiperSlide className='portSlide justify-content-center d-flex'>
                 <img src='/img/portfolio/portfolio.jpg' className='portimg'></img>
             </SwiperSlide>
             <SwiperSlide className=' portSlide justify-content-center d-flex '>
-                <img src='/img/portfolio/portfolio2.jpg' className='portimg' ></img>
+                <img src='/img/portfolio/portfolio2.jpg' className='portimg'></img>
                 </SwiperSlide>
             <SwiperSlide className=' portSlide justify-content-center d-flex '>
                 <img src='/img/portfolio/portfolio3.jpg' className='portimg'></img>
