@@ -45,6 +45,13 @@
          url(./fonts/MaruBuri-Regular/MaruBuri-Regular.otf) format("embedded-opentype");
   }
 
+  
+  @font-face {
+    font-family: 'YdestreetB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/YdestreetB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body{
     font-family: 'NanumSquareL';
@@ -82,4 +89,10 @@ h3{
   h1{
   font-size: 15px;
   }
+}
+
+.aboutul p{
+  font-family: 'Noto Serif KR', serif;
+font-size: 40px;
+font-style: italic;
 }

@@ -32,8 +32,6 @@ class Header extends Component {
     });
   }
   render(){
-
-
     $(function(){
       // Hide Header on on scroll down
       var didScroll;       
@@ -49,13 +47,14 @@ class Header extends Component {
       // hasScrolled()를 실행하고 didScroll 상태를 재설정
       setInterval(function() { 
           if (didScroll) {
-              hasScrolled();
+              hasScrolled();              
               didScroll = false;
           }    
       }, 250);
       
       function hasScrolled() { // 동작 구현
-          var st = $(this).scrollTop();
+          var st = $(window).scrollTop();
+          console.log(st, " / " , lastScrollTop)
           
           // Make sure they scroll more than delta
 
@@ -84,7 +83,7 @@ class Header extends Component {
     return (
 
       <div id='hd'>
-        <Navbar className='container fixed-top wrap' light expand="md">
+        <Navbar className='container fixed-top' light expand="md">
           <NavbarBrand className='py-0 d-block' tag={'div'}>
             <h1 className="logo"><a className='d-block' href='/index.html'><img src="/svg/logo.svg" className='d-block'></img></a></h1>
           </NavbarBrand>
