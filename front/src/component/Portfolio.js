@@ -29,17 +29,17 @@ export default () => {
             className="mySwiper"
         >                
             <SwiperSlide className='portSlide mw-100 justify-content-center d-flex port1'>
-                {/* <img src='/img/portfolio/portfolio.jpg' className='portimg'></img> */}
-                <div className='container position-absolute'>
-                    <h1>제작노트</h1>
-                    <a href=""><img src="" alt="포트폴리오" /></a>
-                    <a href=""><img src="" alt="제작노트" /></a>
+                <div className='container start-0 end-0 top-0 bottom-0 d-flex align-items-start justify-content-center flex-column position-absolute '>
+                    <h1>부트스트랩을 학습하며 제작한 데스크탑 페이지입니다.</h1>
+                    <p>맞벌이 가정 및 1인 가구를 겨냥하여<br/>로봇청소기 구매 및 렌탈 서비스를 제작하였습니다.</p>
+
+                        <a href=""><img src="" alt="포트폴리오" /></a>
+                        <a href=""><img src="" alt="제작노트" /></a>
+
                 </div>
 
             </SwiperSlide>
-            <SwiperSlide className=' portSlide justify-content-center d-flex port2'>
-                {/* <img src='/img/portfolio/portfolio2.jpg' className='portimg'></img> */}
-                               
+            <SwiperSlide className=' portSlide justify-content-center d-flex port2'>                               
                 <div className='position-absolute start-0 end-0 bottom-0'>
                     <ul className='d-flex container d-flex   aboutul'>
                         <li className='px-3'>

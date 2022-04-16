@@ -84,13 +84,13 @@ class Header extends Component {
 
       <div id='hd'>
         <Navbar className='container fixed-top' light expand="md">
-          <NavbarBrand className='py-0 d-block' tag={'div'}>
-            <h1 className="logo"><a className='d-block' href='/index.html'><img src="/svg/logo.svg" className='d-block'></img></a></h1>
+          <NavbarBrand className='py-0 d-block  mw-100' tag={'div'}>
+            <h1 className="logo"><a className='d-block' href='/index.html'></a></h1>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto justify-content-end w-100" navbar>
-              <NavItem className='px-3'>
+              {/* <NavItem className='px-3'>
                 <NavLink className='text-dark' href="/components/">내 소개</NavLink>
               </NavItem>
               <NavItem  className='px-3'>
@@ -98,7 +98,7 @@ class Header extends Component {
               </NavItem>
               <NavItem  className='px-3'>
                 <NavLink className='text-dark' href="/components/">면접제안</NavLink>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Navbar>

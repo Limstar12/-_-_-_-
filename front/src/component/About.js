@@ -4,7 +4,7 @@ class About extends Component {
     render() {
         return (
             <div className='container py-5 aboutLim'>
-                <h1>내 소개</h1>
+                <h1>박혜지를 소개합니다</h1>
                 <div className="about d-md-flex">
                     <div className="position-relative col-md-5 col-12">
                         <div className="position-absolute start-0 end-0 top-0 bottom-0 text-center about-abs">

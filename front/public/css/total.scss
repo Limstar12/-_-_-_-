@@ -10,7 +10,12 @@
 h1.logo{
     width: 96px;
 }
-
+.logo{
+    background: url('/svg/logo.svg') no-repeat;
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+}
 
 #hd{
     position: fixed;
@@ -43,7 +48,9 @@ h1.logo{
     background-image: url('/img/portfolio/portfolio3.jpg');
 }
 
-
+.swiper-wrapper{
+    background-color: #c5d6d0;
+}
 
 @media (max-width: 992px){
 
