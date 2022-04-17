@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -87,18 +88,18 @@ class Header extends Component {
           <NavbarBrand className='py-0 d-block  mw-100' tag={'div'}>
             <h1 className="logo"><a className='d-block' href='/index.html'></a></h1>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler onClick={this.toggle} className=""/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto justify-content-end w-100" navbar>
-              {/* <NavItem className='px-3'>
-                <NavLink className='text-dark' href="/components/">내 소개</NavLink>
+              <NavItem className='px-3'>
+                <NavLink className='text-dark' href="/component/">소개란</NavLink>
               </NavItem>
               <NavItem  className='px-3'>
-                <NavLink className='text-dark' href="/components/">인터뷰</NavLink>
+                <NavLink className='text-dark' href="/component/">사전인터뷰</NavLink>
               </NavItem>
               <NavItem  className='px-3'>
-                <NavLink className='text-dark' href="/components/">면접제안</NavLink>
-              </NavItem> */}
+                <NavLink className='text-dark' href="/component/">면접제안</NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

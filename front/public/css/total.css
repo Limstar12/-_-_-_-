@@ -5,15 +5,17 @@
   padding: 0;
 }
 
-h1.logo {
-  width: 96px;
+.aboutLim h1, .interviewLim {
+  text-align: center;
+  line-height: 8rem;
 }
 
 .logo {
   background: url("/svg/logo.svg") no-repeat;
   position: relative;
+  width: 96px;
   height: 0;
-  padding-bottom: 100%;
+  padding: 55%;
 }
 
 #hd {
@@ -31,12 +33,22 @@ h1.logo {
   transform: translateY(-100%);
 }
 
+@media (max-width: 767px) {
+  .logo {
+    width: 48px;
+  }
+}
+
 .portSlide {
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
+}
+
+.portSlide > .position-abosolute {
+  background-repeat: no-repeat;
   height: 0;
-  padding-bottom: 42%;
+  padding-bottom: 52%;
+  background-position: right;
+  background-size: auto 100%;
 }
 
 .port1 {
@@ -55,35 +67,33 @@ h1.logo {
   background-color: #c5d6d0;
 }
 
-@media (max-width: 992px) {
-  a.navbar-brand img {
-    width: 75px;
-  }
-  .d1ul {
-    top: 0;
+span.swiper-pagination-bullet.swiper-pagination-bullet {
+  width: 50px;
+  height: 5px;
+  border-radius: 0%;
+  background: #055160;
+}
+
+.in_port {
+  background: url("/img/portfolio/in_port.png") no-repeat;
+  background-size: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  width: 40px;
+}
+
+.in_note {
+  background: url("/img/portfolio/in_note.png") no-repeat;
+  background-size: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  width: 40px;
+}
+
+@media (max-width: 575px) {
+  .portImg {
     flex-direction: column;
   }
-  .d2ul {
-    display: none;
-  }
-  .d1li {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .limport {
-    display: none !important;
-  }
-}
-
-@media (max-width: 1280px) {
-  .portimg {
-    max-width: 100%;
-  }
-}
-
-.aboutLim h1 {
-  text-align: center;
-  line-height: 8rem;
 }
 
 .aboutLim h3 {
@@ -112,6 +122,10 @@ h1.logo {
   }
   .about-abs {
     position: relative !important;
+  }
+  .portSlide > .position-abosolute {
+    height: 400px;
+    background-position-x: calc(100% - -105px);
   }
 }
 
@@ -170,4 +184,29 @@ h1.logo {
   height: 2px;
   width: 50%;
   background: #000000;
+}
+
+.int > img {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.intBox1 img {
+  background-image: url("/img/interview/int1.jpg");
+}
+
+.intBox2 img {
+  background-image: url("/img/interview/int2.jpg");
+}
+
+.intBox3 img {
+  background-image: url("/img/interview/int3.jpg");
+}
+
+.intBox4 img {
+  background-image: url("/img/interview/int4.jpg");
 }

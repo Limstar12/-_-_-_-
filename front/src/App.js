@@ -2,6 +2,7 @@
 import Header from './component/Header'
 import Portfolio from './component/Portfolio'
 import About from './component/About'
+import Interview from './component/Interview_before'
 // import Interview from './component/Interview'
 // import Interview_form from './component/Interviewform'
 import Footer from './component/Footer'
@@ -12,9 +13,8 @@ function App() {
       <Header styletype='d1'></Header>
       <Portfolio></Portfolio>
       <About></About>
-      {/* 스와이퍼 */}
-     {/* <Interview botable="interviewlist" titlenm='사전인터뷰'></Interview> */}
-    
+      <Interview></Interview>
+     {/* <Interview botable="interviewlist" titlenm='사전인터뷰'></Interview> */}    
      {/* <Interview_form titlenm='인터뷰글쓰기' botable='interviewwrite'></Interview_form> */}
      {/* <Interview botable="write" titlenm='면접제안'></Interview> */}
      <Footer styletype='family'></Footer>
