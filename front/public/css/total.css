@@ -221,4 +221,23 @@ span.swiper-pagination-bullet.swiper-pagination-bullet {
   border-bottom: 2px black solid;
   border-radius: unset;
   background-color: #fff0;
+  padding: 0;
+  margin: 0;
+}
+
+.formLim Form {
+  padding-left: 20%;
+}
+
+.col-form-label {
+  padding: 0;
+  margin: 0;
+}
+
+.formLim input {
+  background-color: #fff0;
+}
+
+.formLim input:focus {
+  outline: none;
 }

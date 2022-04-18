@@ -6,8 +6,8 @@ class Form_tag extends Component {
         return (
             <div className='formLim py-5 justify-content-center'>
                 <div className='container '>
-                    <h1>저와 함께 일할 멋진 회사를 찾고있어요!</h1>                
-                    <Form >
+                    <h1>저와 함께 일할 멋진 회사를 찾고 있어요!</h1>                
+                    <Form>
                     <FormGroup  className='row'>
                         <Label
                         for="comNM"
@@ -41,11 +41,11 @@ class Form_tag extends Component {
                         </Col>
                     </FormGroup>
                     <FormGroup
-                        className='row'
+                        className='row align-items-start'
                         tag="fieldset"
                     >
                         <legend className="col-form-label col-sm-2">
-                        제안하시는 포지션<sub> * 하나만 선택해주세요. </sub>
+                        제안하시는 포지션 <br/> * 하나만 선택해주세요. 
                         </legend>
                         <Col sm={5} className="d-flex offset-1 " >
                         <FormGroup check className='d-flex align-items-center'>
@@ -111,13 +111,13 @@ class Form_tag extends Component {
                     </FormGroup>
 
                     <FormGroup
-                        className='row'
+                        className='row align-items-start'
                         tag="fieldset"
                     >
-                        <legend className="col-form-label col-sm-2">
-                            귀사에서 원하는 능력<sub> * 퍼블리셔로 면접 제안 시에만 해당됩니다. </sub>
+                        <legend className="col-form-label col-sm-2 text-nowrap">
+                            귀사에서 원하는 능력<br/> * 퍼블리셔로 면접 제안 시에만 해당됩니다.
                         </legend>
-                        <Col sm={5} className="d-flex offset-1 align-items-center">
+                        <Col sm={7} className="d-flex offset-1 align-items-center">
                         <FormGroup check className='d-flex aling-item-center'>
                             <Input
                             name="radio3"
@@ -164,7 +164,7 @@ class Form_tag extends Component {
                         </FormGroup>
                         </Col>
                     </FormGroup>
-                    <FormGroup className='row'>
+                    <FormGroup className='row d-flex align-items-center'>
                         <Label
                         for="com_Phone"
                         sm={3}
@@ -180,27 +180,29 @@ class Form_tag extends Component {
                         />
                         </Col>
                     </FormGroup>
-                    <FormGroup check className='d-flex align-items-center'>
-                        <Input type="checkbox" className='my-0' />
-                        <Label check className='my-0'>
-                        개인정보정책동의
-                        </Label>
-                    </FormGroup>
-                    <FormGroup
-                        check
-                        className='row'
-                    >
-                        <Col
-                        sm={{
-                            offset: 2,
-                            size: 10
-                        }}
+                    <div className='d-flex align-items-center offset-5'>
+                        <FormGroup check className='d-flex align-items-center'>
+                            <Input type="checkbox" className='my-0 me-3 ' />
+                            <Label check className='my-0'>
+                            개인정보정책동의
+                            </Label>
+                        </FormGroup>
+                        <FormGroup
+                            check
+                            className='row'
                         >
-                        <Button>
-                            Submit
-                        </Button>
-                        </Col>
-                    </FormGroup>
+                            <Col
+                            sm={{
+                                // offset: 2,
+                                size: 10
+                            }}
+                            >
+                            <Button className=''>
+                                Submit
+                            </Button>
+                            </Col>
+                        </FormGroup>
+                    </div>
                     </Form>
                 </div>
             </div>
