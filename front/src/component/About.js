@@ -4,7 +4,7 @@ class About extends Component {
     render() {
         return (
             <div className='container py-5 aboutLim'>
-                <h1>박혜지를 소개합니다</h1>
+                <h1>박혜지를 소개합니다!</h1>
                 <div className="about d-md-flex">
                     <div className="position-relative col-md-5 col-12">
                         <div className="position-absolute start-0 end-0 top-0 bottom-0 text-center about-abs">
@@ -33,7 +33,7 @@ class About extends Component {
                             <div className='col-md-6'>
                                 <div className="col-sm-8 w-100">
                                     <div className="progress_bar">
-                                        <div className="progress_bar_title">HTML5</div>
+                                        <div className="progress_bar_title">HTML5/CSS</div>
                                         <div className="progress_number">80%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner80"  data-score="80" ></div>
@@ -42,7 +42,7 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6 w-100">
                                     <div className="progress_bar orange">
-                                        <div className="progress_bar_title">CSS3</div>
+                                        <div className="progress_bar_title">jQuery/Java Script</div>
                                         <div className="progress_number">60%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner60"  data-score="60"></div>
@@ -51,7 +51,7 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6 w-100">
                                     <div className="progress_bar orange">
-                                        <div className="progress_bar_title">CSS3</div>
+                                        <div className="progress_bar_title">Node</div>
                                         <div className="progress_number">60%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner60"  data-score="60"></div>
@@ -60,7 +60,7 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6 w-100">
                                     <div className="progress_bar orange">
-                                        <div className="progress_bar_title">CSS3</div>
+                                        <div className="progress_bar_title">React</div>
                                         <div className="progress_number">60%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner60"  data-score="60"></div>
@@ -71,7 +71,7 @@ class About extends Component {
                             <div className='col-md-6'>
                                 <div className="col-sm-8 w-100">
                                     <div className="progress_bar">
-                                        <div className="progress_bar_title">HTML5</div>
+                                        <div className="progress_bar_title">포토샵/일러스트</div>
                                         <div className="progress_number">80%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner80"  data-score="80" ></div>
@@ -80,7 +80,7 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6 w-100">
                                     <div className="progress_bar orange">
-                                        <div className="progress_bar_title">CSS3</div>
+                                        <div className="progress_bar_title">Bootstrap</div>
                                         <div className="progress_number">60%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner60"  data-score="60"></div>
@@ -89,7 +89,7 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6 w-100">
                                     <div className="progress_bar orange">
-                                        <div className="progress_bar_title">CSS3</div>
+                                        <div className="progress_bar_title">그누보드</div>
                                         <div className="progress_number">60%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner60"  data-score="60"></div>
@@ -98,7 +98,7 @@ class About extends Component {
                                 </div>
                                 <div className="col-sm-6 w-100">
                                     <div className="progress_bar orange">
-                                        <div className="progress_bar_title">CSS3</div>
+                                        <div className="progress_bar_title">카페24 이커머스</div>
                                         <div className="progress_number">50%</div>
                                         <div className="pro-bar">
                                             <div className="progress-bar-inner50"  data-score="50"></div>
